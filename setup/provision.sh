@@ -55,6 +55,15 @@ sudo service mysqld start
 # mysqlを自動起動
 sudo chkconfig mysqld on
 
+# memcachedインストール
+sudo yum install -y memcached
+
+# memcached起動
+sudo service memcached start
+
+# memcached自動起動
+sudo chkconfig memcached on
+
 # ドキュメントルートにindex.phpをコピー
 sudo cp /vagrant/setup/index.php /var/www/html/index.php
 
