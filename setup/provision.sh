@@ -73,4 +73,4 @@ curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
 
 # git vim導入
-sudo yum install -y git vim
+sudo yum install -y git vim tig
