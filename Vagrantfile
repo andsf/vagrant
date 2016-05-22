@@ -28,7 +28,7 @@ Vagrant.configure(2) do |config|
   # config.vm.network "public_network"
   
   # set synced_folder 
-  # config.vm.synced_folder "./", "/vagrant", owner:"vagrant", group:"vagrant", mount_options: ['dmode=777', 'fmode=777']
+  # config.vm.synced_folder "./", "/vagrant", owner:"vagrant", group:"nginx", mount_options: ['dmode=777', 'fmode=777']
   
   # set encode
   Encoding.default_external = 'UTF-8'
