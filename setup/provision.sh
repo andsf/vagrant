@@ -24,7 +24,7 @@ sudo yum -y install nginx
 sudo chown -R root.nginx /var/lib/php/session
 
 # nginx.confのコピー
-sudo cp /vagrant/setup/vagrant.conf /etc/nginx/conf.d/vagrant.conf
+sudo cp /vagrant/setup/laravel.conf /etc/nginx/conf.d/laravel.conf
 
 # PHP7の導入
 sudo yum install epel-release
