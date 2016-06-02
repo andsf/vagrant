@@ -55,17 +55,14 @@ sudo service mysqld start
 # mysqlを自動起動
 sudo chkconfig mysqld on
 
-# memcachedインストール
-sudo yum install -y memcached
+# redisインストール
+sudo yum --enablerepo=epel install -y redis
 
-# memcached起動
-sudo service memcached start
+# redis起動
+sudo service redis start
 
-# memcached自動起動
-sudo chkconfig memcached on
-
-# ドキュメントルートにindex.phpをコピー
-sudo cp /vagrant/setup/index.php /var/www/html/index.php
+# redis自動起動設定
+sudo chkconfig redis on
 
 ## 便利ツール導入
 # commposer導入
